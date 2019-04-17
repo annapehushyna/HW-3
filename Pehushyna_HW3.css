@@ -1,0 +1,158 @@
+.wrap{
+    line-height: 2;
+    text-align: justify;
+    max-width: 80%;
+    margin: auto;    
+}
+.wrap::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.symb::before{
+    content: " f ";
+    font-style: italic;
+    color: rgb(28, 28, 167);
+}
+    
+
+    
+.left{
+    float: left;
+    margin: 0 15px 15px 0;
+}
+.right{
+    float: right;
+    margin: 0 0 0 15px;
+}
+sub{
+color: rgb(28, 28, 167);
+font-style: italic;
+  }
+.tooltip{
+color: rgb(34, 75, 34);
+font-weight: bold;
+position: relative;
+display: inline-block;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 200px;
+    height: 20px;
+    font-size: 12px;
+    text-align: left;
+    padding: 4px 3px;
+    position: absolute;
+    z-index: 1;
+    top:10px;
+    left: 101%;
+    color: black;
+    border: 1px solid black;
+
+}
+.tooltip:hover .tooltiptext{ 
+visibility: visible;
+}
+
+.part2{
+    box-sizing: border-box;
+    height: 600px;
+    background-color: #0d5825;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 30px;
+}
+
+address{
+    margin-bottom: 100px;
+}
+.cards{
+    width: 150px;
+    cursor: pointer; 
+}
+
+body:hover .cards {
+    transition: transform .2s linear;
+}
+#c3{
+    transform: rotate(10deg) translateX(-100px) translateY(40px);
+}
+#c3:hover {
+    transform: rotate(10deg) translateX(-100px) translateY(-10px);  
+}
+#c2{
+   transform: rotate(-10deg);
+}
+#c2:hover {
+    transform: rotate(-10deg) translateY(-50px);
+}
+#c1{
+    transform: rotate(-20deg) translateX(100px) translateY(40px);
+}
+
+#c1:hover {
+    transform: rotate(-20deg) translateX(100px) translateY(-10px);
+}
+
+.time{
+    position: absolute;
+    visibility: hidden;
+}
+
+.part3{
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 900px;
+
+}
+#r2{
+    margin: 60px 0 0 60px;
+}
+#r3{
+    margin: 120px 0 0 120px;
+}
+#r4{
+    margin: 180px 0 0 180px;
+}
+.description{
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    border: 2px solid black;
+    text-align: justify;
+}
+.rabbit-article{
+    position: absolute;
+}
+.rabbit-img{
+    width: 150px;
+    height: 150px;
+}
+.description{
+    display: none;
+    background-color: white;
+}
+.rabbit-article:hover {
+    z-index: 1;
+}
+.rabbit-article:hover .rabbit-img{
+    display: none;   
+}
+#r4:hover .description{
+    display: block; 
+    overflow: hidden; 
+}
+#r3:hover .description{
+    display: block; 
+    overflow: visible; 
+}
+#r2:hover .description{
+    display: block; 
+    overflow: scroll; 
+}
+#r1:hover .description{
+    display: block; 
+    overflow: auto; 
+}
+
